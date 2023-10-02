@@ -1,0 +1,146 @@
+#Proton Torp I
+weapon_component_template = {
+	key = "G_PROTON_TORP_1"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_proton_torp_G_1"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 60.0 max = 150.0 }
+	windup = { min = 15.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 20.0
+	accuracy = 0.8
+	tracking = 0.15
+	
+	missile_speed = 12
+	missile_evasion = 0.30
+	missile_health = 30
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 50
+	
+	shield_penetration = 1.0
+	hull_damage = 2.00
+	
+	
+	power = -20
+	
+	prerequisites = { "tech_small_concussion" }
+	component_set = "G_PROTON_TORP_1"
+	projectile_gfx = "sw_proton_torpedo_g"
+	upgrades_to = "G_PROTON_TORP_2"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+			tibanna_gas = @m_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+#Proton Torp II
+weapon_component_template = {
+	key = "G_PROTON_TORP_2"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_proton_torp_G_2"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 78.0 max = 207.0 }
+	windup = { min = 15.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 20.0
+	accuracy = 0.8
+	tracking = 0.15
+	
+	missile_speed = 12
+	missile_evasion = 0.30
+	missile_health = 30
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 50
+
+	shield_penetration = 1.0
+	hull_damage = 2.00
+	
+	power = -35
+	
+	prerequisites = { "tech_advanced_concussion" }
+	component_set = "G_PROTON_TORP_2"
+	projectile_gfx = "sw_proton_torpedo_g"
+	upgrades_to = "G_PROTON_TORP_3"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			tibanna_gas = @m_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+}
+#Proton Torp III
+weapon_component_template = {
+	key = "G_PROTON_TORP_3"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_proton_torp_G_3"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 101.0 max = 252.0 }
+	windup = { min = 15.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 20.0
+	accuracy = 0.8
+	tracking = 0.15
+	
+	missile_speed = 12
+	missile_evasion = 0.30
+	missile_health = 30
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 50
+	
+	shield_penetration = 1.0
+	hull_damage = 2.00
+	
+	power = -40
+	
+	prerequisites = { "tech_assault_concussion" }
+	component_set = "G_PROTON_TORP_3"
+	projectile_gfx = "sw_proton_torpedo_g"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			tibanna_gas = @m_t5_cost
+			kyber_crystals = @m_t5_rare
+		}		
+		upkeep = {
+			tibanna_gas = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+}

@@ -1,0 +1,382 @@
+#VMD 1
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_VEN_MASS_DRIVER_1"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_1"
+	icon_frame = 1
+	
+	damage = { min = 3.0 max = 50.0 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.60
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -10
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+			tibanna_gas = @s_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_1" }
+	component_set = "SW_VEN_MASS_DRIVER_1_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "SMALL_VEN_MASS_DRIVER_2"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_VEN_MASS_DRIVER_1"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_1"
+	icon_frame = 1
+	
+	damage = { min = 6.0 max = 80.0 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.30
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -20
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+			tibanna_gas = @m_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_1" }
+	component_set = "SW_VEN_MASS_DRIVER_1_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "MEDIUM_VEN_MASS_DRIVER_2"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_VEN_MASS_DRIVER_1"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_1"
+	icon_frame = 1
+	
+	damage = { min = 12.0 max = 100.0 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 117.0
+	accuracy = 0.8
+	tracking = 0.10
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -30
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t1_cost
+			tibanna_gas = @l_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t1_upkeep_energy
+			alloys = @l_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_1" }
+	component_set = "SW_VEN_MASS_DRIVER_1_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "LARGE_VEN_MASS_DRIVER_2"
+}
+#VMD 2
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_VEN_MASS_DRIVER_2"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_2"
+	icon_frame = 1
+	
+	damage = { min = 4.0 max = 70.5 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.60
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -15
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			tibanna_gas = @s_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_2" }
+	component_set = "SW_VEN_MASS_DRIVER_2_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "SMALL_VEN_MASS_DRIVER_3"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_VEN_MASS_DRIVER_2"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_2"
+	icon_frame = 1
+	
+	damage = { min = 8.0 max = 96.0 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.30
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -30
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			tibanna_gas = @m_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_2" }
+	component_set = "SW_VEN_MASS_DRIVER_2_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "MEDIUM_VEN_MASS_DRIVER_3"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_VEN_MASS_DRIVER_2"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_2"
+	icon_frame = 1
+	
+	damage = { min = 16.0 max = 132.0 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 17.0
+	accuracy = 0.8
+	tracking = 0.10
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -60
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t3_cost
+			tibanna_gas = @l_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_2" }
+	component_set = "SW_VEN_MASS_DRIVER_2_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "LARGE_VEN_MASS_DRIVER_2"
+}
+#VMD 3
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_VEN_MASS_DRIVER_3"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_3"
+	icon_frame = 1
+	
+	damage = { min = 5.5 max = 86 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.60
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -20
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			tibanna_gas = @s_t5_cost
+			kyber_crystals = @s_t5_rare
+		}		
+		upkeep = {
+			tibanna_gas = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_3" }
+	component_set = "SW_VEN_MASS_DRIVER_3_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_VEN_MASS_DRIVER_3"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_3"
+	icon_frame = 1
+	
+	damage = { min = 11 max = 114 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.30
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -40
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			tibanna_gas = @m_t5_cost
+			kyber_crystals = @m_t5_rare
+		}		
+		upkeep = {
+			tibanna_gas = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_3" }
+	component_set = "SW_VEN_MASS_DRIVER_3_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_VEN_MASS_DRIVER_3"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ven_mass_driver_3"
+	icon_frame = 1
+	
+	damage = { min = 22 max = 1362 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 10.0
+	range = 17.0
+	accuracy = 0.8
+	tracking = 0.10
+	
+    shield_penetration = 1.0
+	armor_damage = 0.5
+	hull_damage = 1.75
+	
+	power = -80
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			tibanna_gas = @l_t5_cost
+			kyber_crystals = @l_t5_rare
+		}		
+		upkeep = {
+			tibanna_gas = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ven_mass_driver_3" }
+	component_set = "SW_VEN_MASS_DRIVER_3_SET"
+	projectile_gfx = "sw_ven_mass_driver"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}

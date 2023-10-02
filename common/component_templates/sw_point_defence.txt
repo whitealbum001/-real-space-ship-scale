@@ -1,0 +1,671 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+#####################
+#Defence Turbolaser Red
+#####################
+
+# ## Defence Turbolaser MK I
+weapon_component_template = {
+	key = "DEFENCE_TURBO_1_R"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_r_1"
+	icon_frame = 1
+	
+	
+	damage = { min = 2 max = 6.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -5.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+			tibanna_gas = @s_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_defence_turbo_1" "tech_st_blastercolor_red" }
+	component_set = "DEFENCE_TURBO_1_R"
+	type = point_defence
+	projectile_gfx = "defence_turbo_1_s_r"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }
+	upgrades_to = "DEFENCE_TURBO_2_R"
+}
+
+# ## Defence Turbolaser MK II
+weapon_component_template = {
+	key = "DEFENCE_TURBO_2_R"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_r_2"
+	icon_frame = 1
+	
+	
+	damage = { min = 3 max = 9.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10.0
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -7.50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			tibanna_gas = @s_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	
+	prerequisites = { "tech_defence_turbo_2" "tech_st_blastercolor_red" }
+	component_set = "DEFENCE_TURBO_2_R"
+	type = point_defence
+	projectile_gfx = "defence_turbo_2_s_r"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }
+	upgrades_to = "DEFENCE_TURBO_3_R"
+}
+
+# ## Defence Turbolaser MK III
+weapon_component_template = {
+	key = "DEFENCE_TURBO_3_R"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_r_3"
+	icon_frame = 1
+	
+	
+	damage = { min = 4.0 max = 12.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10.0
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -10.00
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			tibanna_gas = @s_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_defence_turbo_3" "tech_st_blastercolor_red" }
+	component_set = "DEFENCE_TURBO_3_R"
+	type = point_defence
+	projectile_gfx = "defence_turbo_3_s_r"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }	
+}
+
+#####################
+#Defence Turbolaser Green
+#####################
+
+# ## Defence Turbolaser MK I
+weapon_component_template = {
+	key = "DEFENCE_TURBO_1_G"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_g_1"
+	icon_frame = 1
+	
+	
+	damage = { min = 2 max = 6.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -5.00
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+			tibanna_gas = @s_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_defence_turbo_1" "tech_st_blastercolor_green" }
+	component_set = "DEFENCE_TURBO_1_G"
+	type = point_defence
+	projectile_gfx = "defence_turbo_1_s_g"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }
+	upgrades_to = "DEFENCE_TURBO_2_G"
+}
+
+# ## Defence Turbolaser MK II
+weapon_component_template = {
+	key = "DEFENCE_TURBO_2_G"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_g_2"
+	icon_frame = 1
+	
+	
+	damage = { min = 3 max = 9.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10.0
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -7.50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			tibanna_gas = @s_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	
+	prerequisites = { "tech_defence_turbo_2" "tech_st_blastercolor_green" }
+	component_set = "DEFENCE_TURBO_2_G"
+	type = point_defence
+	projectile_gfx = "defence_turbo_2_s_g"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }
+	upgrades_to = "DEFENCE_TURBO_3_G"
+}
+
+# ## Defence Turbolaser MK III
+weapon_component_template = {
+	key = "DEFENCE_TURBO_3_G"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_g_3"
+	icon_frame = 1
+	
+	
+	damage = { min = 4.0 max = 12.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10.0
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -10.00
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			tibanna_gas = @s_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_defence_turbo_3" "tech_st_blastercolor_green" }
+	component_set = "DEFENCE_TURBO_3_G"
+	type = point_defence
+	projectile_gfx = "defence_turbo_3_s_g"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }	
+}
+
+#####################
+#Defence Turbolaser Blue
+#####################
+
+# ## Defence Turbolaser MK I
+weapon_component_template = {
+	key = "DEFENCE_TURBO_1_B"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_b_1"
+	icon_frame = 1
+	
+	
+	damage = { min = 2 max = 6.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -5.00
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+			tibanna_gas = @s_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_defence_turbo_1" "tech_st_blastercolor_blue" }
+	component_set = "DEFENCE_TURBO_1_B"
+	type = point_defence
+	projectile_gfx = "defence_turbo_1_s_b"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }
+	upgrades_to = "DEFENCE_TURBO_2_B"	
+}
+
+# ## Defence Turbolaser MK II
+weapon_component_template = {
+	key = "DEFENCE_TURBO_2_B"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_b_2"
+	icon_frame = 1
+	
+	
+	damage = { min = 3 max = 9.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10.0
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -7.50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			tibanna_gas = @s_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	
+	prerequisites = { "tech_defence_turbo_2" "tech_st_blastercolor_blue" }
+	component_set = "DEFENCE_TURBO_2_B"
+	type = point_defence
+	projectile_gfx = "defence_turbo_2_s_b"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }
+	upgrades_to = "DEFENCE_TURBO_3_B"
+}
+
+# ## Defence Turbolaser MK III
+weapon_component_template = {
+	key = "DEFENCE_TURBO_3_B"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_defence_turbo_b_3"
+	icon_frame = 1
+	
+	
+	damage = { min = 4.0 max = 12.0 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 10.0
+	range = 5.0
+	accuracy = 0.90
+	tracking = 0.50
+	
+	shield_damage = 0.5
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	
+	power = -10.00
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			tibanna_gas = @s_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_defence_turbo_3" "tech_st_blastercolor_blue" }
+	component_set = "DEFENCE_TURBO_3_B"
+	type = point_defence
+	projectile_gfx = "defence_turbo_3_s_b"
+	tags = { weapon_type_point_defense weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense  }	
+}
+###############
+#Flak Quad 1 Green
+##############
+
+weapon_component_template = {
+	type = point_defence
+	
+	key = "M_FLAK_QUAD_TURBO_1_G"
+	size = point_defence
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_1"
+	icon_frame = 1
+	
+	damage = { min = 2 max = 5 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 2.5
+	range = 5.0
+	accuracy = 0.60
+	tracking = 0.35
+	
+	shield_damage = 0.5
+	armor_damage = 0.25
+	shield_penetration = 0.00
+	armor_penetration = 0.0
+	
+	power = -7.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			tibanna_gas = @s_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_green" }
+	component_set = "FLAK_QUAD_TURBO_1_G"
+	projectile_gfx = "flak_quad_turbo_1_m_g"
+	tags = { weapon_type_turbo_laser weapon_type_point_defense }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+	upgrades_to = "M_FLAK_QUAD_TURBO_2_G"
+}
+
+#Flak Quad 2 Green
+weapon_component_template = {
+	type = point_defence
+	
+	key = "M_FLAK_QUAD_TURBO_2_G"
+	size = point_defence
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_2"
+	icon_frame = 1
+	
+	damage = { min = 3 max = 7 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 2.5
+	range = 5.0
+	accuracy = 0.60
+	tracking = 0.35
+	
+	shield_damage = 0.5
+	armor_damage = 0.25
+	shield_penetration = 0.00
+	armor_penetration = 0.0
+	
+	power = -7.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			tibanna_gas = @s_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_green" }
+	component_set = "FLAK_QUAD_TURBO_2_G"
+	projectile_gfx = "flak_quad_turbo_1_m_g"
+	tags = { weapon_type_turbo_laser weapon_type_point_defense }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+}
+
+#Flak Quad 1 Red
+weapon_component_template = {
+	type = point_defence
+	
+	key = "M_FLAK_QUAD_TURBO_1_R"
+	size = point_defence
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_1"
+	icon_frame = 1
+	
+	damage = { min = 2 max = 5 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 2.5
+	range = 5.0
+	accuracy = 0.60
+	tracking = 0.35
+	
+	shield_damage = 0.5
+	armor_damage = 0.25
+	shield_penetration = 0.00
+	armor_penetration = 0.0
+	
+	power = -7.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			tibanna_gas = @s_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_red" }
+	component_set = "FLAK_QUAD_TURBO_1_R"
+	projectile_gfx = "flak_quad_turbo_1_m_r"
+	tags = { weapon_type_turbo_laser weapon_type_point_defense }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+	upgrades_to = "M_FLAK_QUAD_TURBO_2_R"
+}
+
+
+#Flak Quad 2 Red
+weapon_component_template = {
+	type = point_defence
+	
+	key = "M_FLAK_QUAD_TURBO_2_R"
+	size = point_defence
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_2"
+	icon_frame = 1
+	
+	damage = { min = 3 max = 7 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 2.5
+	range = 5.0
+	accuracy = 0.60
+	tracking = 0.35
+	
+	shield_damage = 0.5
+	armor_damage = 0.25
+	shield_penetration = 0.00
+	armor_penetration = 0.0
+	
+	power = -7.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			tibanna_gas = @s_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_red" }
+	component_set = "FLAK_QUAD_TURBO_2_R"
+	projectile_gfx = "flak_quad_turbo_1_m_r"
+	tags = { weapon_type_turbo_laser weapon_type_point_defense }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+}
+
+#Flak Quad 1 Blue
+weapon_component_template = {
+	type = point_defence
+	
+	key = "M_FLAK_QUAD_TURBO_1_B"
+	size = point_defence
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_1"
+	icon_frame = 1
+	
+	damage = { min = 2 max = 5 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 2.5
+	range = 5.0
+	accuracy = 0.60
+	tracking = 0.35
+	
+	shield_damage = 0.5
+	armor_damage = 0.25
+	shield_penetration = 0.00
+	armor_penetration = 0.0
+	
+	power = -7.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			tibanna_gas = @s_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_blue" }
+	component_set = "FLAK_QUAD_TURBO_1_B"
+	projectile_gfx = "flak_quad_turbo_1_m_b"
+	tags = { weapon_type_turbo_laser weapon_type_point_defense }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+	upgrades_to = "M_FLAK_QUAD_TURBO_2_B"
+}
+
+#Flak Quad 2 Blue
+weapon_component_template = {
+	type = point_defence
+	
+	key = "M_FLAK_QUAD_TURBO_2_B"
+	size = point_defence
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_2"
+	icon_frame = 1
+	
+	damage = { min = 3 max = 7 }
+	windup = { min = 0.0 max = 1.0 }
+	total_fire_time = 2.5
+	range = 5.0
+	accuracy = 0.60
+	tracking = 0.35
+	
+	shield_damage = 0.5
+	armor_damage = 0.25
+	shield_penetration = 0.00
+	armor_penetration = 0.0
+	
+	power = -7.5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			tibanna_gas = @s_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_blue" }
+	component_set = "FLAK_QUAD_TURBO_2_B"
+	projectile_gfx = "flak_quad_turbo_1_m_b"
+	tags = { weapon_type_turbo_laser weapon_type_point_defense }
+	ai_tags = { weapon_role_short_range weapon_role_point_defense }
+}

@@ -1,0 +1,60 @@
+# ####################
+#  Super Laser
+# ####################
+
+# ## Superlaser
+
+#############################
+#Superlaser T slot
+###############################
+weapon_component_template = {
+	key = "SW_SUPERLASER"
+	size = titanic
+	entity = "sw_Superlaser_entities"
+	
+	type = instant
+	
+	icon = "GFX_ship_part_sw_superlaser"
+	icon_frame = 1
+	
+	damage = { min = 10000 max = 20000  }
+	windup = { min = 150.0 max = 200.0 }
+	total_fire_time = 100.0
+	range = 50.0
+	accuracy = 1
+	tracking = 0.0
+	
+	shield_damage = 1.25
+	armor_damage = 1.5
+	shield_penetration = 0
+	armor_penetration = 0
+	hull_damage = 1.75
+	
+	power = -280.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t7_cost
+			kyber_crystals = @xl_t7_rare
+			tibanna_gas = @xl_t7_cost
+		}		
+		upkeep = {
+			tibanna_gas = @xl_t7_upkeep_energy
+			alloys = @xl_t7_upkeep_alloys
+			kyber_crystals = @xl_t7_upkeep_alloys
+		}
+	}
+	
+	firing_arc = 40.0
+	min_range = 10.0
+	static_rotation = yes
+
+	
+	prerequisites = { "tech_conq_laser" }
+	component_set = "SW_SUPERLASER_T"
+	projectile_gfx = "sw_superlaser"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+
+}

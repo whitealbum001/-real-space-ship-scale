@@ -1,0 +1,799 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+# ####################
+#  Turbolaser Blue
+# ####################
+
+#####################
+#Light Turbo Laser
+#####################
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_LIGHT_TURBO_1_B"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_1"
+	icon_frame = 1
+	
+	
+	damage = { min = 10.0 max = 56.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 7.0
+	accuracy = 0.825
+	tracking = 0.50
+	
+    shield_damage = 0.25
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -5
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+			tibanna_gas = @s_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_light_turbo" "tech_st_blastercolor_blue" }
+	component_set = "LIGHT_TURBO_1_B"
+	projectile_gfx = "light_turbo_s_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "SMALL_MEDIUM_TURBO_2_B"
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0.0
+			has_global_flag = disable_turbo
+		}
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = tibanna_gas value <= 0 }
+		}
+		
+	}
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_LIGHT_TURBO_1_B"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_1"
+	icon_frame = 1
+	
+	damage = { min = 23.0 max = 70.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 10.0
+	accuracy = 0.825
+	tracking = 0.30
+	
+    shield_damage = 0.25
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -10
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+			tibanna_gas = @m_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_light_turbo" "tech_st_blastercolor_blue" }
+	component_set = "LIGHT_TURBO_1_B"
+	projectile_gfx = "light_turbo_m_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_MEDIUM_TURBO_2_B"
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0.0
+			has_global_flag = disable_turbo
+		}
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = tibanna_gas value <= 0 }
+		}
+		
+	}
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_LIGHT_TURBO_1_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_1"
+	icon_frame = 1
+	
+	damage = { min = 56.0 max = 100.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 14.0
+	accuracy = 0.825
+	tracking = 0.1
+	
+    shield_damage = 0.25
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -20
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t1_cost
+			tibanna_gas = @l_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t1_upkeep_energy
+			alloys = @l_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_light_turbo" "tech_st_blastercolor_blue" }
+	component_set = "LIGHT_TURBO_1_B"
+	projectile_gfx = "light_turbo_l_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "LARGE_MEDIUM_TURBO_2_B"
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0.0
+			has_global_flag = disable_turbo
+		}
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = tibanna_gas value <= 0 }
+		}
+		
+	}
+}
+
+######################
+#Medium Turbolaser
+######################
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_MEDIUM_TURBO_2_B"
+	size = small
+	entity = "small_kinetic_gun_entity"
+		
+	icon = "GFX_ship_part_turbo_laser_b_2"
+	icon_frame = 1
+	
+	damage = { min = 12 max = 68 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 7.0
+	accuracy = 0.825
+	tracking = 0.5
+	
+	shield_damage = 0.25
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -7
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			tibanna_gas = @s_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_medium_turbo" "tech_st_blastercolor_blue" }
+	component_set = "MEDIUM_TURBO_2_B"
+	projectile_gfx = "turbolaser_s_b"
+	tags = { weapon_type_turbo_laser	}
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "SMALL_HEAVY_TURBO_3_B"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_MEDIUM_TURBO_2_B"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+		
+	icon = "GFX_ship_part_turbo_laser_b_2"
+	icon_frame = 1
+	
+	damage = { min = 29 max = 83 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 10.0
+	accuracy = 0.825
+	tracking = 0.3
+	
+	shield_damage = 0.25
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -13
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t2_cost
+			tibanna_gas = @m_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t2_upkeep_energy
+			alloys = @m_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_medium_turbo" "tech_st_blastercolor_blue" }
+	component_set = "MEDIUM_TURBO_2_B"
+	projectile_gfx = "turbolaser_m_b"
+	tags = { weapon_type_turbo_laser	}
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_HEAVY_TURBO_3_B"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_MEDIUM_TURBO_2_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+		
+	icon = "GFX_ship_part_turbo_laser_b_2"
+	icon_frame = 1
+	
+	damage = { min = 70.0 max = 136.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 14.0
+	accuracy = 0.825
+	tracking = 0.1
+	
+	shield_damage = 0.25
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -26
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t2_cost
+			tibanna_gas = @l_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t2_upkeep_energy
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_medium_turbo" "tech_st_blastercolor_blue" }
+	component_set = "MEDIUM_TURBO_2_B"
+	projectile_gfx = "turbolaser_l_b"
+	tags = { weapon_type_turbo_laser	}
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "LARGE_HEAVY_TURBO_3_B"
+}
+####################
+#Heavy Turbolaser
+####################
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_HEAVY_TURBO_3_B"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_3"
+	icon_frame = 1
+	
+	damage = { min = 15.0 max = 79.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 7.0
+	accuracy = 0.825
+	tracking = 0.5
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -10.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			tibanna_gas = @s_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_heavy_turbo" "tech_st_blastercolor_blue" }
+	component_set = "HEAVY_TURBO_3_B"
+	projectile_gfx = "medium_turbolaser_s_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "SMALL_VERYHEAVY_TURBO_4_B"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_HEAVY_TURBO_3_B"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_3"
+	icon_frame = 1
+	
+	damage = { min = 36.0 max = 88.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 10.0
+	accuracy = 0.825
+	tracking = 0.3
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -20.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			tibanna_gas = @m_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_heavy_turbo" "tech_st_blastercolor_blue" }
+	component_set = "HEAVY_TURBO_3_B"
+	projectile_gfx = "medium_turbolaser_m_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_VERYHEAVY_TURBO_4_B"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_HEAVY_TURBO_3_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_3"
+	icon_frame = 1
+	
+	damage = { min = 87.0 max = 183.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 14.0
+	accuracy = 0.825
+	tracking = 0.1
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -40.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t3_cost
+			tibanna_gas = @l_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_heavy_turbo" "tech_st_blastercolor_blue" }
+	component_set = "HEAVY_TURBO_3_B"
+	projectile_gfx = "medium_turbolaser_l_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "LARGE_VERYHEAVY_TURBO_4_B"
+}
+
+
+#########################
+#Super Heavy Turbolaser
+#########################
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_VERYHEAVY_TURBO_4_B"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_4"
+	icon_frame = 1
+	
+	damage = { min = 18.0 max = 87.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 7.0
+	accuracy = 0.825
+	tracking = 0.5
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -13
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			kyber_crystals = @s_t4_rare
+			tibanna_gas = @s_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+
+	
+	prerequisites = { "tech_veryheavy_turbo" "tech_st_blastercolor_blue" }
+	component_set = "VERYHEAVY_TURBO_4_B"
+	projectile_gfx = "heavy_turbo_s_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "SMALL_KYBER_TURBO_5_B"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_VERYHEAVY_TURBO_4_B"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_4"
+	icon_frame = 1
+	
+	damage = { min = 43.0 max = 108.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 10.0
+	accuracy = 0.825
+	tracking = 0.3
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -26
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			kyber_crystals = @m_t4_rare
+			tibanna_gas = @m_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_veryheavy_turbo" "tech_st_blastercolor_blue" }
+	component_set = "VERYHEAVY_TURBO_4_B"
+	projectile_gfx = "heavy_turbo_m_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_KYBER_TURBO_5_B"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_VERYHEAVY_TURBO_4_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_4"
+	icon_frame = 1
+	
+	damage = { min = 104.0 max = 240.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 14.0
+	accuracy = 0.825
+	tracking = 0.1
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -52
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			kyber_crystals = @l_t4_rare
+			tibanna_gas = @l_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_veryheavy_turbo" "tech_st_blastercolor_blue" }
+	component_set = "VERYHEAVY_TURBO_4_B"
+	projectile_gfx = "heavy_turbo_l_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "LARGE_KYBER_TURBO_5_B"
+}
+#############################
+#Kyber-Enhanced Turbolaser
+#############################
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_KYBER_TURBO_5_B"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_5"
+	icon_frame = 1
+	
+	damage = { min = 22.0 max = 100.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 7.0
+	accuracy = 0.825
+	tracking = 0.5
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			kyber_crystals = @s_t5_rare
+			tibanna_gas = @s_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_kyber_turbo" "tech_st_blastercolor_blue" }
+	component_set = "KYBER_TURBO_5_B"
+	projectile_gfx = "veryheavy_turbo_s_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_KYBER_TURBO_5_B"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_5"
+	icon_frame = 1
+	
+	damage = { min = 53.0 max = 135.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 10.0
+	accuracy = 0.825
+	tracking = 0.3
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -34
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			kyber_crystals = @m_t5_rare
+			tibanna_gas = @m_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_kyber_turbo" "tech_st_blastercolor_blue" }
+	component_set = "KYBER_TURBO_5_B"
+	projectile_gfx = "veryheavy_turbo_m_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_KYBER_TURBO_5_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_turbo_laser_b_5"
+	icon_frame = 1
+	
+	damage = { min = 129.0 max = 300.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 40.0
+	range = 14.0
+	accuracy = 0.825
+	tracking = 0.1
+	
+	shield_damage = 0.250
+	armor_damage = 1.5
+	hull_damage = 1.5
+	
+	power = -68
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			kyber_crystals = @l_t5_rare
+			tibanna_gas = @l_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_kyber_turbo" "tech_st_blastercolor_blue" }
+	component_set = "KYBER_TURBO_5_B"
+	projectile_gfx = "veryheavy_turbo_l_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+#####################
+#  Octuple Turbolaser
+#####################
+
+### Octuple Turbolaser 1
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_OCTUPLE_TURBO_1_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_octuple_turbo_b_1"
+	icon_frame = 1
+	
+	damage = { min = 200.0 max = 950.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 55.0
+	range = 20.0
+	accuracy = 0.60
+	tracking = 0.01
+	
+	shield_damage = 0.25
+	armor_damage = 1.5
+	hull_damage = 2.0
+	
+	power = -90.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			kyber_crystals = @l_t5_rare
+			tibanna_gas = @l_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_octuple_turbo_1" "tech_st_blastercolor_blue" }
+	component_set = "OCTUPLE_TURBO_1_B"
+	projectile_gfx = "octuple_turbo_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_long_range }
+	upgrades_to = "LARGE_OCTUPLE_TURBO_2_B"
+}
+
+### Octuple Turbolaser 2
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_OCTUPLE_TURBO_2_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_octuple_turbo_b_2"
+	icon_frame = 1
+	
+	damage = { min = 325.0 max = 1185.0 }
+	windup = { min = 0.0 max = 20.0 }
+	total_fire_time = 55
+	range = 20.0
+	accuracy = 0.60
+	tracking = 0.01
+	
+	shield_damage = 0.25
+	armor_damage = 1.5
+	hull_damage = 2.0
+	
+	power = -110
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			kyber_crystals = @l_t6_rare
+			tibanna_gas = @l_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_octuple_turbo_2" "tech_st_blastercolor_blue" }
+	component_set = "OCTUPLE_TURBO_2_B"
+	projectile_gfx = "octuple_turbo_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_long_range }
+}
+
+
+

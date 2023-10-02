@@ -1,0 +1,422 @@
+# ####################
+#  Fighter Weapons
+# ####################
+
+# ## Tie Scout 
+weapon_component_template = {
+	type = point_defence
+	
+	key = "SMALL_TIE_SCOUT"
+	size = small
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_tie_scout"
+	icon_frame = 1
+	
+	damage = { min = 2.0 max = 10.0 }
+	windup = { min = 1.0 max = 19.0 }
+	total_fire_time = 20.0
+	range = 3.0
+	accuracy = 0.80
+	tracking = 0.80
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 2.5
+			tibanna_gas = 10
+		}		
+		upkeep = {
+			tibanna_gas = 0.2
+		}
+	}
+	
+	size_restriction = { st_Empire_fighter }
+	prerequisites = { "tech_tie_scout" }
+	component_set = "TIE_SCOUT_WEAPON"
+	projectile_gfx = "TIE_Fighter_s_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense }	
+}
+
+### TIE Fighter
+weapon_component_template = {
+	type = point_defence
+	
+	key = "SMALL_TIE_FIGHTER"
+	size = small
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_tie_fighter_weapon"
+	icon_frame = 1
+	
+	damage = { min = 4.0 max = 26.0 }
+	windup = { min = 1.0 max = 19.0 }
+	total_fire_time = 20.0
+	range = 3.0
+	accuracy = 0.80
+	tracking = 0.80
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	
+	power = 0
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+			tibanna_gas = 20
+		}		
+		upkeep = {
+			tibanna_gas = 0.4
+		}
+	}
+
+	size_restriction = { st_Empire_fighter }
+	prerequisites = { "tech_tie_fighter" }
+	component_set = "TIE_FIGHTER_WEAPON"
+	projectile_gfx = "TIE_Fighter_s_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense }	
+}
+
+### TIE Interceptor
+weapon_component_template = {
+	type = point_defence
+	
+	key = "SMALL_TIE_INTERCEPTOR"
+	size = small
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_tie_interceptor_weapon"
+	icon_frame = 1
+	
+	damage = { min = 6.0 max = 38.0 }
+	windup = { min = 1.0 max = 19.0 }
+	total_fire_time = 20.0
+	range = 3.0
+	accuracy = 0.80
+	tracking = 0.80
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			tibanna_gas = 40
+		}		
+		upkeep = {
+			tibanna_gas = 0.8
+		}
+	}
+	
+	size_restriction = { st_Empire_fighter }
+	prerequisites = { "tech_tie_interceptor" }
+	component_set = "TIE_INTERCEPTOR_WEAPON"
+	projectile_gfx = "TIE_Fighter_s_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense }	
+}
+
+
+### TIE Hunter
+weapon_component_template = {
+	type = point_defence
+	
+	key = "SMALL_TIE_HUNTER"
+	size = small
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_tie_hunter_weapon"
+	icon_frame = 1
+	
+	damage = { min = 8.0 max = 45.0 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 22.0
+	range = 3.0
+	accuracy = 0.80
+	tracking = 0.80
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			tibanna_gas = 80
+		}		
+		upkeep = {
+			tibanna_gas = 1.6
+		}
+	}
+	size_restriction = { st_Empire_fighter }
+	prerequisites = { "tech_tie_hunter" }
+	component_set = "TIE_HUNTER_WEAPON"
+	projectile_gfx = "TIE_Fighter_s_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense }	
+}
+
+
+### TIE_Bomber
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_TIE_BOMBER"
+	size = small
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_tie_bomber_weapon"
+	icon_frame = 1
+	
+	damage = { min = 30.0 max = 78.0 }
+	windup = { min = 20.0 max = 40.0 }
+	total_fire_time = 70.0
+	range = 4.0
+	accuracy = 1.0
+	tracking = 0.0
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 1
+	armor_penetration = 0
+	
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 5
+			tibanna_gas = 20
+		}		
+		upkeep = {
+			tibanna_gas = 0.4
+		}
+	}
+	
+	size_restriction = { st_Empire_bomber }
+	prerequisites = { "tech_tie_bomber" }
+	component_set = "TIE_BOMBER_WEAPON"
+	projectile_gfx = "sw_proton_torpedo_s"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_hull }	
+}
+
+### TIE Defender
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_TIE_DEFENDER"
+	size = small
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_tie_defender_weapon"
+	icon_frame = 1
+	
+	damage = { min = 40.0 max = 85.0 }
+	windup = { min = 20.0 max = 40.0 }
+	total_fire_time = 70.0
+	range = 4.0
+	accuracy = 1.0
+	tracking = 0.0
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 1
+	armor_penetration = 0
+	
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			tibanna_gas = 40
+		}		
+		upkeep = {
+			tibanna_gas = 0.8
+		}
+	}
+	
+	size_restriction = { st_Empire_bomber }
+	prerequisites = { "tech_tie_defender" }
+	component_set = "TIE_DEFENDER_WEAPON"
+	projectile_gfx = "sw_proton_torpedo_s"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_hull }	
+}
+
+### TIE Torpedo
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_TIE_TORPEDO"
+	size = small
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_tie_torpedo_weapon"
+	icon_frame = 1
+	
+	damage = { min = 50.0 max = 100.0 }
+	windup = { min = 20.0 max = 40.0 }
+	total_fire_time = 70.0
+	range = 4.0
+	accuracy = 1.0
+	tracking = 0.0
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 1
+	armor_penetration = 0
+	
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+			tibanna_gas = 80
+		}		
+		upkeep = {
+			tibanna_gas = 1.6
+		}
+	}
+	
+	size_restriction = { st_Empire_bomber }
+	prerequisites = { "tech_tie_torpedo" }
+	component_set = "TIE_TORPEDO_WEAPON"
+	projectile_gfx = "sw_proton_torpedo_s"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_hull }	
+}
+
+### Slave 1
+weapon_component_template = {
+	type = point_defence
+	
+	key = "SMALL_SLAVE1"
+	size = small
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_slave1_weapon"
+	icon_frame = 1
+	
+	damage = { min = 10.0 max = 25.0 }
+	windup = { min = 1.0 max = 2.0 }
+	total_fire_time = 2.0
+	range = 3.0
+	accuracy = 0.60
+	tracking = 0.80
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 0
+	armor_penetration = 0
+	
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			tibanna_gas = 40
+		}		
+		upkeep = {
+			tibanna_gas = 0.8
+		}
+	}
+	
+	size_restriction = { st_Empire_Patrol }
+	prerequisites = { "tech_patrol_craft" }
+	component_set = "SLAVE1_WEAPON"
+	projectile_gfx = "Slave1_Patrol_s_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_point_defense }	
+}
+
+# Missile
+weapon_component_template = {
+	type = missile
+	
+	key = "MEDIUM_SLAVE1"
+	size = torpedo
+	entity = "st_empire_01_fighterweapon_entity"
+	
+	icon = "GFX_ship_part_fighter_missile"
+	icon_frame = 1
+	
+	damage = { min = 20.0 max = 60.0 }
+	windup = { min = 15.0 max = 25.0 }
+	total_fire_time = 30.0
+	range = 6.0
+	accuracy = 1.00
+	tracking = 0.60
+	
+	missile_speed = 20
+	missile_evasion = 0.30
+	missile_health = 3
+	missile_armor = 0
+	missile_shield = 0
+	
+	shield_damage = 1
+	armor_damage = 1
+	hull_damage = 2
+	shield_penetration = 1
+	armor_penetration = 0.25
+	
+	power = 0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 10
+			tibanna_gas = 40
+		}		
+		upkeep = {
+			tibanna_gas = 0.8
+		}
+	}
+	
+	size_restriction = { st_Empire_Patrol }
+	prerequisites = { "tech_patrol_craft" }
+	component_set = "FIGHTER_MISSILE"
+	projectile_gfx = "small_concussion_f_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_hull }	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+weapon_component_template = {
+	key = "G_DIAMOND_BORON_1"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	type = missile
+	
+	icon = "GFX_ship_part_sw_dboron_1"
+	icon_frame = 1
+	
+	damage = { min = 25 max = 600 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 80.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.2
+	
+	shield_damage = 0.75
+	armor_damage = 1.25
+	shield_penetration = 0
+	armor_penetration = 0
+	hull_damage = 1.25
+	
+	missile_speed = 12
+	missile_evasion = 0.10
+	missile_health = 15
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 20
+	
+	power = -30.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			tibanna_gas = @l_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+
+	size_restriction = { destroyer }
+	
+	upgrades_to = "G_DIAMOND_BORON_2"
+	prerequisites = { "tech_diamond_boron_1" }
+	component_set = "SW_DIAMOND_BORON_1"
+	projectile_gfx = "large_concussion_h_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+
+}
+weapon_component_template = {
+	key = "G_DIAMOND_BORON_2"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	type = missile
+	
+	icon = "GFX_ship_part_sw_dboron_2"
+	icon_frame = 1
+	
+	damage = { min = 50 max = 900 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 80.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.2
+	
+	shield_damage = 0.75
+	armor_damage = 1.25
+	shield_penetration = 0
+	armor_penetration = 0
+	hull_damage = 1.25
+	
+	missile_speed = 30
+	missile_evasion = 0.10
+	missile_health = 100
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 20
+	
+	power = -40.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			tibanna_gas = @l_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t6_upkeep_energy
+			alloys = @l_t6_upkeep_alloys
+		}
+	}
+
+	size_restriction = { destroyer }
+	
+	prerequisites = { "tech_diamond_boron_2" }
+	component_set = "SW_DIAMOND_BORON_2"
+	projectile_gfx = "large_concussion_h_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+
+}

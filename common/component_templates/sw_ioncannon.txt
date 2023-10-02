@@ -1,0 +1,753 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+# ####################
+#  Ion Cannon
+# ####################
+
+# ## Proto Type
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_ION_CANNON_1"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_1"
+	icon_frame = 1
+	
+	
+	damage = { min = 6.0 max = 12.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 7.0
+	accuracy = 0.90
+	tracking = 0.60
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -5
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+			tibanna_gas = @s_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_1" }
+	component_set = "ION_CANNON_1"
+	projectile_gfx = "ion_cannon_1_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "SMALL_ION_CANNON_2"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_ION_CANNON_1"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_1"
+	icon_frame = 1
+	
+	
+	damage = { min = 12 max = 26 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 10.0
+	accuracy = 0.90
+	tracking = 0.30
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -10
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+			tibanna_gas = @m_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_1" }
+	component_set = "ION_CANNON_1"
+	projectile_gfx = "ion_cannon_1_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "MEDIUM_ION_CANNON_2"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_ION_CANNON_1"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_1"
+	icon_frame = 1
+	
+	
+	damage = { min = 24 max = 76 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 14.0
+	accuracy = 0.90
+	tracking = 0.10
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -20
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t1_cost
+			tibanna_gas = @l_t1_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t1_upkeep_energy
+			alloys = @l_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_1" }
+	component_set = "ION_CANNON_1"
+	projectile_gfx = "ion_cannon_1_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "LARGE_ION_CANNON_2"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+# ## Ion Cannon Light
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_ION_CANNON_2"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_2"
+	icon_frame = 1
+	
+	
+	damage = { min = 7.0 max = 15.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 7.0
+	accuracy = 0.90
+	tracking = 0.60
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -7
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t2_cost
+			tibanna_gas = @s_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t2_upkeep_energy
+			alloys = @s_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_2" }
+	component_set = "ION_CANNON_2"
+	projectile_gfx = "ion_cannon_2_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "SMALL_ION_CANNON_3"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_ION_CANNON_2"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_2"
+	icon_frame = 1
+	
+	
+	damage = { min = 14 max = 33 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 10.0
+	accuracy = 0.90
+	tracking = 0.30
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -13
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t2_cost
+			tibanna_gas = @m_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t2_upkeep_energy
+			alloys = @m_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_2" }
+	component_set = "ION_CANNON_2"
+	projectile_gfx = "ion_cannon_2_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "MEDIUM_ION_CANNON_3"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_ION_CANNON_2"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_2"
+	icon_frame = 1
+	
+	
+	damage = { min = 28 max = 70 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 14.0
+	accuracy = 0.90
+	tracking = 0.10
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -26
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t2_cost
+			tibanna_gas = @l_t2_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t2_upkeep_energy
+			alloys = @l_t2_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_2" }
+	component_set = "ION_CANNON_2"
+	projectile_gfx = "ion_cannon_2_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "LARGE_ION_CANNON_3"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+# ## Ion Cannon Medium
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_ION_CANNON_3"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_3"
+	icon_frame = 1
+	
+	
+	damage = { min = 9 max = 18 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 7.0
+	accuracy = 0.90
+	tracking = 0.60
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -10
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t3_cost
+			tibanna_gas = @s_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_3" }
+	component_set = "ION_CANNON_3"
+	projectile_gfx = "ion_cannon_2_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "SMALL_ION_CANNON_4"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_ION_CANNON_3"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_3"
+	icon_frame = 1
+	
+	
+	damage = { min = 18 max = 42 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 10.0
+	accuracy = 0.90
+	tracking = 0.30
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			tibanna_gas = @m_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_3" }
+	component_set = "ION_CANNON_3"
+	projectile_gfx = "ion_cannon_2_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "MEDIUM_ION_CANNON_4"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_ION_CANNON_3"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_3"
+	icon_frame = 1
+	
+	
+	damage = { min = 36 max = 92 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 14.0
+	accuracy = 0.90
+	tracking = 0.10
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -34
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t3_cost
+			tibanna_gas = @l_t3_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_3" }
+	component_set = "ION_CANNON_3"
+	projectile_gfx = "ion_cannon_2_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	upgrades_to = "LARGE_ION_CANNON_4"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+
+# ## Ion Cannon Heavy
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_ION_CANNON_4"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_4"
+	icon_frame = 1
+	
+	
+	damage = { min = 12 max = 24 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 7.0
+	accuracy = 0.90
+	tracking = 0.60
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -13.0
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			kyber_crystals = @s_t4_rare
+			tibanna_gas = @s_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_4" }
+	component_set = "ION_CANNON_4"
+	projectile_gfx = "ion_cannon_3_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "SMALL_ION_CANNON_5"
+	ai_weight = {
+		weight = 1
+	} 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_ION_CANNON_4"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_4"
+	icon_frame = 1
+	
+	
+	damage = { min = 24 max = 54 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 10.0
+	accuracy = 0.90
+	tracking = 0.30
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -23.0
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			kyber_crystals = @m_t4_rare
+			tibanna_gas = @m_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_4" }
+	component_set = "ION_CANNON_4"
+	projectile_gfx = "ion_cannon_3_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_ION_CANNON_5"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_ION_CANNON_4"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_4"
+	icon_frame = 1
+	
+	
+	damage = { min = 48 max = 116 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 14.0
+	accuracy = 0.90
+	tracking = 0.10
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -45.0
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			kyber_crystals = @l_t4_rare
+			tibanna_gas = @l_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_4" }
+	component_set = "ION_CANNON_4"
+	projectile_gfx = "ion_cannon_3_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "LARGE_ION_CANNON_5"
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+# ## Ion Cannon Super Heavy
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_ION_CANNON_5"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_5"
+	icon_frame = 1
+	
+	
+	damage = { min = 15 max = 30  }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 7.0
+	accuracy = 0.90
+	tracking = 0.60
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			kyber_crystals = @s_t5_rare
+			tibanna_gas = @s_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_5" }
+	component_set = "ION_CANNON_5"
+	projectile_gfx = "ion_cannon_3_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	ai_weight = { 
+		weight = 1
+	} 
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_ION_CANNON_5"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_5"
+	icon_frame = 1
+	
+	
+	damage = { min = 30 max = 66 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 10.0
+	accuracy = 0.90
+	tracking = 0.30
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -30
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			kyber_crystals = @m_t5_rare
+			tibanna_gas = @m_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_5" }
+	component_set = "ION_CANNON_5"
+	projectile_gfx = "ion_cannon_3_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	ai_weight = { 
+		weight = 1
+	} 	
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_ION_CANNON_5"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_ion_cannon_5"
+	icon_frame = 1
+	
+	
+	damage = { min = 60 max = 140}
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 60.0
+	range = 14.0
+	accuracy = 0.90
+	tracking = 0.10
+	
+	shield_damage = 4.0
+	shield_penetration = 0.00
+	armor_penetration = 0.00
+	armor_damage = 0.00
+	hull_damage = 0.50
+	
+	power = -59
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			kyber_crystals = @l_t5_rare
+			tibanna_gas = @l_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_ion_cannon_5" }
+	component_set = "ION_CANNON_5"
+	projectile_gfx = "ion_cannon_3_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }	
+	ai_weight = { 
+		weight = 1
+	} 
+}
+
+

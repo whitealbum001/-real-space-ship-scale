@@ -1,0 +1,92 @@
+
+weapon_component_template = {
+	key = "CSS_SOLAR_CANNON"
+	size = extra_large							##### NOT titanic, for balance with crazy OP T slot weapon mods
+	type = instant
+	prio_projectile = yes
+
+	icon = "GFX_ship_part_CSS_SOLAR_CANNON"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	use_ship_kill_target = no
+	
+	tags = { weapon_type_energy }
+	
+	component_set = "CSS_SOLAR_CANNON"
+	projectile_gfx = "solar_cannon"
+	
+	power						= 0
+	damage						= { min = 5000 max = 10000 }
+	hull_damage					= 1.50
+	shield_damage				= 0.75
+	shield_penetration			= 0.00
+	armor_damage				= 1.25
+	armor_penetration			= 0.00
+	windup						= { min = 0 max = 0 }
+	total_fire_time				= 300
+	range						= 22
+	accuracy					= 1.00
+	tracking					= 0.00
+	size_damage_factor			= 0.0
+	
+	ship_limit = 7
+
+	ai_weight = {
+		weight = 10000
+	}
+	
+	size_restriction = { CSS_JG_WARFLOWER }
+	
+}
+
+weapon_component_template = {
+	key = "CSS_EXT_CANNON"
+	size = titanic
+	type = instant
+	prio_projectile = yes
+
+	icon = "GFX_ship_part_CSS_EXT_CANNON"
+	icon_frame = 1
+	
+	firing_arc = 10.0
+	use_ship_kill_target = no
+	
+	tags = { weapon_type_kinetic }
+	
+	component_set = "CSS_EXT_CANNON"
+	projectile_gfx = "ext_cannon"
+	
+	power						= -500
+	damage						= { min = 10000 max = 20000 }
+	hull_damage					= 1.25
+	shield_damage				= 2.00
+	shield_penetration			= 0.00
+	armor_damage				= 0.75
+	armor_penetration			= 0.00
+	windup						= { min = 30 max = 120 }
+	total_fire_time				= 90
+	range						= 22
+	accuracy					= 0.85
+	tracking					= 0.00
+	size_damage_factor			= 0.0
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @titanic_t6_cost
+			volatile_motes = @titanic_t6_rare
+		}
+		upkeep = {
+			energy = @titanic_t6_upkeep_energy
+			alloys = @titanic_t6_upkeep_alloys
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+	
+	size_restriction = { CSS_JG_DREADNOUGHT }
+	
+}

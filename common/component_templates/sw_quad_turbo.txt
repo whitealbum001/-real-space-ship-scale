@@ -1,0 +1,1191 @@
+########################
+##Quad Turbolaser Blue##
+########################
+
+
+#Quad 1
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_1_B"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_1"
+	icon_frame = 1
+	
+	damage = { min = 20.0 max = 35.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -20
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			tibanna_gas = @s_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_1_B"
+	projectile_gfx = "quad_turbo_1_s_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "SMALL_QUAD_TURBO_2_B"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_1_B"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_1"
+	icon_frame = 1
+	
+	damage = { min = 48.0 max = 73.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.150
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			tibanna_gas = @m_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_1_B"
+	projectile_gfx = "quad_turbo_1_m_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "MEDIUM_QUAD_TURBO_2_B"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_1_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_1"
+	icon_frame = 1
+	
+	damage = { min = 117.0 max = 160.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.1
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -34
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			tibanna_gas = @l_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_1_B"
+	projectile_gfx = "quad_turbo_1_l_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "LARGE_QUAD_TURBO_2_B"
+}
+
+
+
+#Quad 2
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_2_B"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_2"
+	icon_frame = 1
+	
+	damage = { min = 29.0 max = 43.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -13
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			tibanna_gas = @s_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_2_B"
+	projectile_gfx = "quad_turbo_1_s_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "SMALL_QUAD_TURBO_3_B" 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_2_B"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_2"
+	icon_frame = 1
+	
+	damage = { min = 68.0 max = 93.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -23
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			tibanna_gas = @m_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_2_B"
+	projectile_gfx = "quad_turbo_1_m_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "MEDIUM_QUAD_TURBO_3_B" 
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_2_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_2"
+	icon_frame = 1
+	
+	damage = { min = 168.0 max = 208.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -45
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			tibanna_gas = @l_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_2_B"
+	projectile_gfx = "quad_turbo_1_l_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "LARGE_QUAD_TURBO_3_B" 
+}
+
+
+#Quad 3
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_3_B"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_3"
+	icon_frame = 1
+	
+	damage = { min = 40.0 max = 52.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			kyber_crystals = @s_t6_rare
+			tibanna_gas = @s_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_3_B"
+	projectile_gfx = "quad_turbo_1_s_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_3_B"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_3"
+	icon_frame = 1
+	
+	damage = { min = 97.0 max = 115.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -30
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			kyber_crystals = @m_t6_rare
+			tibanna_gas = @m_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_3_B"
+	projectile_gfx = "quad_turbo_1_m_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_3_B"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_b_3"
+	icon_frame = 1
+	
+	damage = { min = 232.0 max = 262.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.1
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -59
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			kyber_crystals = @l_t6_rare
+			tibanna_gas = @l_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_blue" }
+	component_set = "QUAD_TURBO_3_B"
+	projectile_gfx = "quad_turbo_1_l_b"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}
+
+#########################
+##Quad Turbolaser Green##
+#########################
+
+
+#Quad 1
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_1_G"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_1"
+	icon_frame = 1
+	
+	damage = { min = 20.0 max = 35.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -10
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			tibanna_gas = @s_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_1_G"
+	projectile_gfx = "quad_turbo_1_s_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "SMALL_QUAD_TURBO_2_G"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_1_G"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_1"
+	icon_frame = 1
+	
+	damage = { min = 48.0 max = 73.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			tibanna_gas = @m_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_1_G"
+	projectile_gfx = "quad_turbo_1_m_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_QUAD_TURBO_2_G"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_1_G"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_1"
+	icon_frame = 1
+	
+	damage = { min = 117.0 max = 160.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.1
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -34
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			tibanna_gas = @l_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_1_G"
+	projectile_gfx = "quad_turbo_1_l_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "LARGE_QUAD_TURBO_2_G"
+}
+
+
+
+#Quad 2
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_2_G"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_2"
+	icon_frame = 1
+	
+	damage = { min = 29.0 max = 43.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -13
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			tibanna_gas = @s_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_2_G"
+	projectile_gfx = "quad_turbo_1_s_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "SMALL_QUAD_TURBO_3_G" 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_2_G"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_2"
+	icon_frame = 1
+	
+	damage = { min = 70.0 max = 93.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -23
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			tibanna_gas = @m_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_2_G"
+	projectile_gfx = "quad_turbo_1_m_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_QUAD_TURBO_3_G" 
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_2_G"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_2"
+	icon_frame = 1
+	
+	damage = { min = 168.0 max = 208.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -45
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			tibanna_gas = @l_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_2_G"
+	projectile_gfx = "quad_turbo_1_l_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "LARGE_QUAD_TURBO_3_G" 
+}
+
+
+#Quad 3
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_3_G"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_3"
+	icon_frame = 1
+	
+	damage = { min = 40.0 max = 52.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			kyber_crystals = @s_t6_rare
+			tibanna_gas = @s_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_3_G"
+	projectile_gfx = "quad_turbo_1_s_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_3_G"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_3"
+	icon_frame = 1
+	
+	damage = { min = 97.0 max = 115.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -30
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			kyber_crystals = @m_t6_rare
+			tibanna_gas = @m_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_3_G"
+	projectile_gfx = "quad_turbo_1_m_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_3_G"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_g_3"
+	icon_frame = 1
+	
+	damage = { min = 232.0 max = 262.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.1
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -59
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			kyber_crystals = @l_t6_rare
+			tibanna_gas = @l_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_green" }
+	component_set = "QUAD_TURBO_3_G"
+	projectile_gfx = "quad_turbo_1_l_g"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+
+#######################
+##Quad Turbolaser Red##
+#######################
+
+
+#Quad 1
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_1_R"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_1"
+	icon_frame = 1
+	
+	damage = { min = 20.0 max = 35.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -10
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t4_cost
+			tibanna_gas = @s_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t3_upkeep_energy
+			alloys = @s_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_1_R"
+	projectile_gfx = "quad_turbo_1_s_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "SMALL_QUAD_TURBO_2_R"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_1_R"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_1"
+	icon_frame = 1
+	
+	damage = { min = 48.0 max = 73.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			tibanna_gas = @m_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_1_R"
+	projectile_gfx = "quad_turbo_1_m_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "MEDIUM_QUAD_TURBO_2_R"
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_1_R"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_1"
+	icon_frame = 1
+	
+	damage = { min = 117.0 max = 160.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.1
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -34
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			tibanna_gas = @l_t4_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_1" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_1_R"
+	projectile_gfx = "quad_turbo_1_l_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "LARGE_QUAD_TURBO_2_R"
+}
+
+
+
+#Quad 2
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_2_R"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_2"
+	icon_frame = 1
+	
+	damage = { min = 29.0 max = 43.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -13
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t5_cost
+			tibanna_gas = @s_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t4_upkeep_energy
+			alloys = @s_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_2_R"
+	projectile_gfx = "quad_turbo_1_s_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "SMALL_QUAD_TURBO_3_R" 
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_2_R"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_2"
+	icon_frame = 1
+	
+	damage = { min = 70.0 max = 93.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -23
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			tibanna_gas = @m_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_2_R"
+	projectile_gfx = "quad_turbo_1_m_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "MEDIUM_QUAD_TURBO_3_R" 
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_2_R"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_2"
+	icon_frame = 1
+	
+	damage = { min = 168.0 max = 208.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -45
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			tibanna_gas = @l_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_2" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_2_R"
+	projectile_gfx = "quad_turbo_1_l_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "LARGE_QUAD_TURBO_3_R" 
+}
+
+
+#Quad 3
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_QUAD_TURBO_3_R"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_3"
+	icon_frame = 1
+	
+	damage = { min = 40.0 max = 52.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 7.0
+	accuracy = 0.8
+	tracking = 0.5
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -17
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t6_cost
+			kyber_crystals = @s_t6_rare
+			tibanna_gas = @s_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @s_t5_upkeep_energy
+			alloys = @s_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_3_R"
+	projectile_gfx = "quad_turbo_1_s_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_QUAD_TURBO_3_R"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_3"
+	icon_frame = 1
+	
+	damage = { min = 97.0 max = 115.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 10.0
+	accuracy = 0.8
+	tracking = 0.3
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -30
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t6_cost
+			kyber_crystals = @m_t6_rare
+			tibanna_gas = @m_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_3_R"
+	projectile_gfx = "quad_turbo_1_m_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_QUAD_TURBO_3_R"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_quad_turbo_r_3"
+	icon_frame = 1
+	
+	damage = { min = 232.0 max = 262.0 }
+	windup = { min = 0.0 max = 40.0 }
+	total_fire_time = 50.0
+	range = 14.0
+	accuracy = 0.8
+	tracking = 0.1
+	
+	shield_damage = 0.15
+	armor_damage = 1.75
+	hull_damage = 1.75
+	
+	power = -59
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t6_cost
+			kyber_crystals = @l_t6_rare
+			tibanna_gas = @l_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_quad_turbo_3" "tech_st_blastercolor_red" }
+	component_set = "QUAD_TURBO_3_R"
+	projectile_gfx = "quad_turbo_1_l_r"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}

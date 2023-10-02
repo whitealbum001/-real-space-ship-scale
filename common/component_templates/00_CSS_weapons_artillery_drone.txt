@@ -1,0 +1,57 @@
+
+strike_craft_component_template = {
+	key = "CSS_ARTILLERY_DRONE"
+	size = LARGE
+	entity = "probe_entity"
+
+	weapon_type = instant
+	projectile_gfx = "xray_laser_l"
+
+	power = -100
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t3_cost
+		}
+		upkeep = {
+			energy = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+
+	count = 4
+	regeneration_per_day = 0.5
+	launch_time = 10
+
+	damage = { min = 160 max = 240 }
+	cooldown = 5
+	range = 30
+	engagement_range = 30
+	accuracy = 0.85
+	tracking = 0.00
+
+	health = 20
+	armor = 0
+	shield = 20
+	evasion = 0.00
+
+	speed = 400
+	rotation_speed = 2.0
+	acceleration = 1
+
+	armor_damage = 1.5
+
+	ship_behavior = "artillery_drone_behavior"
+
+	icon = "GFX_ship_part_CSS_ARTILLERY_DRONE"
+	icon_frame = 1
+	component_set = "CSS_ARTILLERY_DRONE"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { carrier }
+	
+	size_restriction = { CSS_CC_DRONE }
+	
+	ai_weight = { weight = 10000 }
+
+}

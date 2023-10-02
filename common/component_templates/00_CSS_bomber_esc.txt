@@ -1,0 +1,415 @@
+@attack_range = 5
+@engagement_range = 25
+@launch_time = 2
+@speed1 = 550
+@speed2 = 600
+@speed3 = 650
+@speed4 = 700
+@count = 8
+@regen = 0.5
+
+@power1 = -20
+@power2 = -34
+@power3 = -45
+@power4 = -59
+
+strike_craft_component_template = {
+	key = "ESC_BOMBERS_HANGAR_1"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = instant
+	projectile_gfx = "bomber_missile_1"
+
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t3_cost
+		}
+		upkeep = {
+			energy = @l_t3_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+
+	count = @count
+	regeneration_per_day = @regen
+	launch_time = @launch_time
+
+	damage = { min = 8 max = 20 }		# { min = 4 max = 10 }
+	cooldown = 4.6						# 2.3
+	range = @attack_range
+	engagement_range = @engagement_range
+	accuracy = 1.00
+	tracking = 0.00						# 0.80
+
+	health = 7
+	armor = 0
+	shield = 15
+	evasion = 0.65
+
+	speed = @speed2
+	rotation_speed = 0.75				# 0.8
+	acceleration = 1
+
+	hull_damage = @ESC_STRIKECRAFT_hull_damage_bomber
+	armor_damage = @ESC_STRIKECRAFT_armor_damage_bomber
+	shield_penetration = @ESC_STRIKECRAFT_shield_penetration_bomber
+	
+	#x	size_damage_factor = 0.5 # looks NOT working or NOT visible in tooltips
+
+	ship_behavior = "bombers_behavior"
+
+	icon = "GFX_ship_part_strike_craft_bomber_1"
+	icon_frame = 1
+	component_set = "ESC_BOMBERS_HANGAR_1"
+	prerequisites = { "tech_strike_craft_1_CSS" }
+	upgrades_to = "ESC_BOMBERS_HANGAR_2"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { carrier }
+	
+	#x	slot_restriction = { large_strike_craft_CSS_BOMBER }
+	#x	size_restriction = { CSS_BB_CARRIER CSS_CC_CARRIER }
+	
+	valid_for_country = {
+		has_global_flag = Extra_Ship_Components_NEXT
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+
+}
+
+strike_craft_component_template = {
+	key = "ESC_BOMBERS_HANGAR_2"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = instant
+	projectile_gfx = "bomber_missile_2"
+
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+		}
+		upkeep = {
+			energy = @l_t4_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+
+	count = @count
+	regeneration_per_day = @regen
+	launch_time = @launch_time
+
+	damage = { min = 10 max = 26 }		# { min = 5 max = 13 }
+	cooldown = 4.6						# 2.3
+	range = @attack_range
+	engagement_range = @engagement_range
+	accuracy = 1.00
+	tracking = 0.00						# 0.90
+
+	health = 10
+	armor = 0
+	shield = 20
+	evasion = 0.80
+
+	speed = @speed3
+	rotation_speed = 0.75				# 0.8
+	acceleration = 1
+	
+	hull_damage = @ESC_STRIKECRAFT_hull_damage_bomber
+	armor_damage = @ESC_STRIKECRAFT_armor_damage_bomber
+	shield_penetration = @ESC_STRIKECRAFT_shield_penetration_bomber
+	
+	#x	size_damage_factor = 0.5 # looks NOT working or NOT visible in tooltips
+
+	ship_behavior = "bombers_behavior"
+
+	icon = "GFX_ship_part_strike_craft_bomber_2"
+	icon_frame = 1
+	component_set = "ESC_BOMBERS_HANGAR_2"
+	prerequisites = { "tech_strike_craft_2_CSS" }
+	upgrades_to = "ESC_BOMBERS_HANGAR_3"
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { carrier }
+	
+	#x	slot_restriction = { large_strike_craft_CSS_BOMBER }
+	#x	size_restriction = { CSS_BB_CARRIER CSS_CC_CARRIER }
+	
+	valid_for_country = {
+		has_global_flag = Extra_Ship_Components_NEXT
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+
+}
+
+strike_craft_component_template = {
+	key = "ESC_BOMBERS_HANGAR_3"
+	size = LARGE
+	entity = "bomber_entity"
+
+	weapon_type = instant
+	projectile_gfx = "bomber_missile_3"
+
+	power = @power4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+		}
+		upkeep = {
+			energy = @l_t5_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+
+	count = @count
+	regeneration_per_day = @regen
+	launch_time = @launch_time
+
+	damage = { min = 12 max = 34 }		# damage = { min = 6 max = 17 }
+	cooldown = 4.6						# 2.3
+	range = @attack_range
+	engagement_range = @engagement_range
+	accuracy = 1.00
+	tracking = 0.00						# 1.00
+
+	health = 12
+	armor = 0
+	shield = 25
+	evasion = 0.80
+
+	speed = @speed4
+	rotation_speed = 0.75				# 0.8
+	acceleration = 1
+	
+	hull_damage = @ESC_STRIKECRAFT_hull_damage_bomber
+	armor_damage = @ESC_STRIKECRAFT_armor_damage_bomber
+	shield_penetration = @ESC_STRIKECRAFT_shield_penetration_bomber
+	
+	#x	size_damage_factor = 0.5 # looks NOT working or NOT visible in tooltips
+
+	ship_behavior = "bombers_behavior"
+
+	icon = "GFX_ship_part_strike_craft_bomber_3"
+	icon_frame = 1
+	component_set = "ESC_BOMBERS_HANGAR_3"
+	prerequisites = { "tech_strike_craft_3_CSS" }
+
+	tags = { weapon_type_strike_craft }
+	ai_tags = { carrier }
+	
+	#x	slot_restriction = { large_strike_craft_CSS_BOMBER }
+	#x	size_restriction = { CSS_BB_CARRIER CSS_CC_CARRIER }
+	
+	valid_for_country = {
+		has_global_flag = Extra_Ship_Components_NEXT
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+
+}
+
+strike_craft_component_template = {
+	key = ESC_BOMBERS_HANGAR_4
+	size = LARGE
+	entity = "bomber_entity"
+	icon = GFX_esc_strikecrafts_bomber_4
+	icon_frame = 1
+
+	weapon_type = instant
+	projectile_gfx = "esc_bomber_laser_4"
+	power = -75
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @ESC_WEAPON_l_t6_cost_alloys
+		}
+		upkeep = {
+			energy = @ESC_WEAPON_l_t6_upkeep_energy
+			alloys = @ESC_WEAPON_l_t6_upkeep_alloys
+		}
+	}
+
+	count = @ESC_STRIKECRAFT_count
+	regeneration_per_day = @ESC_STRIKECRAFT_regen
+	launch_time = @ESC_STRIKECRAFT_launch_time
+
+	damage = { min = 20 max = 40 }
+	cooldown = 4
+	range = @ESC_STRIKECRAFT_attack_range_bomber
+	engagement_range = @ESC_STRIKECRAFT_engagement_range
+	accuracy = @ESC_STRIKECRAFT_accuracy
+	health = 25
+	armor = 0
+	shield = 40
+
+	tracking = @ESC_STRIKECRAFT_tracking_bomber
+	evasion = @ESC_STRIKECRAFT_evasion
+	speed = @ESC_STRIKECRAFT_speed_4
+	rotation_speed = @ESC_STRIKECRAFT_rot_speed_bomber
+	acceleration = @ESC_STRIKECRAFT_acceleration_bomber
+
+	hull_damage = @ESC_STRIKECRAFT_hull_damage_bomber
+	armor_damage = @ESC_STRIKECRAFT_armor_damage_bomber
+	shield_penetration = @ESC_STRIKECRAFT_shield_penetration_bomber
+	
+	#x	size_damage_factor = 0.5 # looks NOT working or NOT visible in tooltips
+
+	ship_behavior = "bombers_behavior"
+	component_set = ESC_BOMBERS_HANGAR_4
+	prerequisites = { "esc_tech_strikecraft_4" }
+	tags = { weapon_type_strike_craft }
+	ai_tags = { carrier weapon_role_anti_shield carrier }
+	upgrades_to = ESC_BOMBERS_HANGAR_5
+	
+	valid_for_country = {
+		has_global_flag = Extra_Ship_Components_NEXT
+	}
+	
+	ai_weight = { weight = 1 }
+}
+
+strike_craft_component_template = {
+	key = ESC_BOMBERS_HANGAR_5
+	size = LARGE
+	entity = "bomber_entity"
+	icon = GFX_esc_strikecrafts_bomber_5
+	icon_frame = 1
+
+	weapon_type = instant
+	projectile_gfx = "esc_bomber_laser_5"
+	power = -85
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @ESC_WEAPON_l_t7_cost_alloys
+		}
+		upkeep = {
+			energy = @ESC_WEAPON_l_t7_upkeep_energy
+			alloys = @ESC_WEAPON_l_t7_upkeep_alloys
+		}
+	}
+
+	count = @ESC_STRIKECRAFT_count
+	regeneration_per_day = @ESC_STRIKECRAFT_regen
+	launch_time = @ESC_STRIKECRAFT_launch_time
+
+	damage = { min = 30 max = 50 }
+	cooldown = 4
+	range = @ESC_STRIKECRAFT_attack_range_bomber
+	engagement_range = @ESC_STRIKECRAFT_engagement_range
+	accuracy = @ESC_STRIKECRAFT_accuracy
+	health = 35
+	armor = 0
+	shield = 60
+
+	tracking = @ESC_STRIKECRAFT_tracking_bomber
+	evasion = @ESC_STRIKECRAFT_evasion
+	speed = @ESC_STRIKECRAFT_speed_5
+	rotation_speed = @ESC_STRIKECRAFT_rot_speed_bomber
+	acceleration = @ESC_STRIKECRAFT_acceleration_bomber
+
+	hull_damage = @ESC_STRIKECRAFT_hull_damage_bomber
+	armor_damage = @ESC_STRIKECRAFT_armor_damage_bomber
+	shield_penetration = @ESC_STRIKECRAFT_shield_penetration_bomber
+	
+	#x	size_damage_factor = 0.5 # looks NOT working or NOT visible in tooltips
+
+	ship_behavior = "bombers_behavior"
+	component_set = ESC_BOMBERS_HANGAR_5
+	prerequisites = { "esc_tech_strikecraft_5" }
+	tags = { weapon_type_strike_craft }
+	ai_tags = { carrier weapon_role_anti_shield carrier }
+	upgrades_to = ESC_BOMBERS_HANGAR_6
+	
+	valid_for_country = {
+		has_global_flag = Extra_Ship_Components_NEXT
+	}
+	
+	ai_weight = { weight = 1 }
+}
+
+strike_craft_component_template = {
+	key = ESC_BOMBERS_HANGAR_6
+	size = LARGE
+	entity = "bomber_entity"
+	icon = GFX_esc_strikecrafts_bomber_6
+	icon_frame = 1
+
+	weapon_type = instant
+	projectile_gfx = "esc_bomber_laser_6"
+	power = -100
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @ESC_WEAPON_l_t8_cost_alloys
+			sr_dark_matter = @ESC_WEAPON_l_t8_cost_special
+		}
+		upkeep = {
+			energy = @ESC_WEAPON_l_t8_upkeep_energy
+			alloys = @ESC_WEAPON_l_t8_upkeep_alloys
+		}
+	}
+
+	count = @ESC_STRIKECRAFT_count
+	regeneration_per_day = @ESC_STRIKECRAFT_regen
+	launch_time = @ESC_STRIKECRAFT_launch_time
+
+	damage = { min = 40 max = 60 }
+	cooldown = 4
+	range = @ESC_STRIKECRAFT_attack_range_bomber
+	engagement_range = @ESC_STRIKECRAFT_engagement_range
+	accuracy = @ESC_STRIKECRAFT_accuracy
+	health = 50
+	armor = 0
+	shield = 80
+
+	tracking = @ESC_STRIKECRAFT_tracking_bomber
+	evasion = @ESC_STRIKECRAFT_evasion
+	speed = @ESC_STRIKECRAFT_speed_6
+	rotation_speed = @ESC_STRIKECRAFT_rot_speed_bomber
+	acceleration = @ESC_STRIKECRAFT_acceleration_bomber
+
+	hull_damage = @ESC_STRIKECRAFT_hull_damage_bomber
+	armor_damage = @ESC_STRIKECRAFT_armor_damage_bomber
+	shield_penetration = @ESC_STRIKECRAFT_shield_penetration_bomber
+	
+	#x	size_damage_factor = 0.5 # looks NOT working or NOT visible in tooltips
+
+	ship_behavior = "bombers_behavior"
+	component_set = ESC_BOMBERS_HANGAR_6
+	prerequisites = { "esc_tech_strikecraft_6" }
+	tags = { weapon_type_strike_craft }
+	ai_tags = { carrier weapon_role_anti_shield carrier }
+
+	# only normal empires may use this component
+	valid_for_country = {
+		is_fallen_empire = no
+		has_global_flag = Extra_Ship_Components_NEXT
+	}
+
+	ai_weight = {
+		weight = 1
+		### AI shouldn't use this component if it can't afford at least some upgrades right away
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+	}
+}

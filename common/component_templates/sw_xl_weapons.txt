@@ -1,0 +1,186 @@
+weapon_component_template = {
+	key = "SW_PROTON_BEAM_XL"
+	size = extra_large
+	entity = "sw_Superlaser_entities"
+	
+	type = instant
+	
+	icon = "GFX_ship_part_sw_proton_beam"
+	icon_frame = 1
+	
+	damage = { min = 750 max = 1000 }
+	windup = { min = 45.0 max = 50.0 }
+	total_fire_time = 100.0
+	range = 25.0
+	accuracy = 1.00
+	tracking = 0.5
+	
+	shield_damage = 0.25
+	armor_damage = 1.5
+	armor_penetration = 0.75
+	hull_damage = 1.5
+	
+	power = -140.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			kyber_crystals = @xl_t6_rare
+			tibanna_gas = @xl_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+
+	
+	prerequisites = { "tech_sw_proton_beam" }
+	component_set = "SW_PROTON_BEAM"
+	projectile_gfx = "sw_proton_beam"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+
+}
+weapon_component_template = {
+	key = "SW_SHIELD_LEECH_XL"
+	size = extra_large
+	entity = "sw_Superlaser_entities"
+	
+	type = instant
+	
+	icon = "GFX_ship_part_sw_shield_leech"
+	icon_frame = 1
+	
+	damage = { min = 500 max = 1200 }
+	windup = { min = 45.0 max = 50.0 }
+	total_fire_time = 60.0
+	range = 25.0
+	accuracy = 1.00
+	tracking = 0.50
+	
+	shield_damage = 2.0
+	armor_damage = 0.0
+	hull_damage = 0.0
+	
+	power = -140.00
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			kyber_crystals = @xl_t6_rare
+			tibanna_gas = @xl_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_sw_shield_leech" }
+	component_set = "SW_SHIELD_LEECH"
+	projectile_gfx = "sw_shield_leech"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+
+}
+weapon_component_template = {
+	key = "SW_ION_BLAST_L"
+	size = extra_large
+	entity = "sw_Superlaser_entities"
+	
+	type = instant
+	
+	icon = "GFX_ship_part_sw_ion_blast"
+	icon_frame = 1
+	
+	damage = { min = 250 max = 500 }
+	windup = { min = 10 max = 10 }
+	total_fire_time = 70.0
+	range = 25.0
+	accuracy = 0.8
+	tracking = 0.1
+	
+	shield_damage = 3.00
+	armor_damage = 0.0
+	hull_damage = 0.0
+	
+	power = -70.00
+	
+	firing_arc = 5.0
+	min_range = 30.0
+	static_rotation = yes
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			kyber_crystals = @xl_t6_rare
+			tibanna_gas = @xl_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+
+	
+	prerequisites = { "tech_sw_spinal_blast" }
+	component_set = "SW_ION_BLAST"
+	projectile_gfx = "sw_ion_blast"
+	size_restriction = { battleship }
+	
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+
+}
+weapon_component_template = {
+	key = "SW_PLASMA_BLAST_L"
+	size = extra_large
+	entity = "sw_Superlaser_entities"
+	
+	type = instant
+	
+	icon = "GFX_ship_part_sw_plasma_blast"
+	icon_frame = 1
+	
+	damage = { min = 250 max = 500 }
+	windup = { min = 40 max = 45 }
+	total_fire_time = 70.0
+	range = 25.0
+	accuracy = 0.8
+	tracking = 0.1
+	
+	shield_damage = 1.0
+	armor_damage = 2.0
+	hull_damage = 3.0
+	
+	power = -70.00
+	
+	firing_arc = 5.0
+	min_range = 30.0
+	static_rotation = yes
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @xl_t6_cost
+			kyber_crystals = @xl_t6_rare
+			tibanna_gas = @xl_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @xl_t6_upkeep_energy
+			alloys = @xl_t6_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_sw_spinal_blast" }
+	component_set = "SW_PLASMA_BLAST"
+	projectile_gfx = "sw_plasma_blast"
+	size_restriction = { battleship }
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+
+}

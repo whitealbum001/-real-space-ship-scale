@@ -1,0 +1,285 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+# ####################
+#  Disruptor
+# ####################
+
+# ## Heavy Turbolaser
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_DISRUPTOR_1_P"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_disruptor_turbo_1"
+	icon_frame = 1
+	
+	damage = { min = 30.0 max = 75.0 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 50
+	range = 7.0
+	accuracy = 0.75
+	tracking = 0.40
+	
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_penetration = 0.75
+	hull_damage = 2.25
+	
+	power = -15
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+			tibanna_gas = @m_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t4_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_st_disruptor_1" }
+	component_set = "DISRUPTOR_1_P"
+	projectile_gfx = "st_disruptor_1_m"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "MEDIUM_DISRUPTOR_2_P"
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_DISRUPTOR_1_P"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_disruptor_turbo_1"
+	icon_frame = 1
+	
+	damage = { min = 60.0 max = 150.0 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 50
+	range = 10.0
+	accuracy = 0.75
+	tracking = 0.10
+	
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_penetration = 0.75
+	hull_damage = 2.25
+	
+	power = -30.00
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t3_cost
+			tibanna_gas = @l_t5_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t4_upkeep_energy
+			alloys = @l_t3_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_st_disruptor_1" }
+	component_set = "DISRUPTOR_1_P"
+	projectile_gfx = "st_disruptor_1_l"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "LARGE_DISRUPTOR_2_P"
+}
+
+### Disruptor 2
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_DISRUPTOR_2_P"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_disruptor_turbo_2"
+	icon_frame = 1
+	
+	damage = { min = 39.0 max = 97.0 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 50
+	range = 7.0
+	accuracy = 0.75
+	tracking = 0.40
+	
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_penetration = 0.75
+	hull_damage = 2.25
+	
+	power = -17.50
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			tibanna_gas = @m_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t5_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_st_disruptor_2" }
+	component_set = "DISRUPTOR_2_P"
+	projectile_gfx = "st_disruptor_1_m"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "MEDIUM_DISRUPTOR_3_P"
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_DISRUPTOR_2_P"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_disruptor_turbo_2"
+	icon_frame = 1
+	
+	
+	damage = { min = 78.0 max = 194.0 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 50
+	range = 10.0
+	accuracy = 0.75
+	tracking = 0.10
+	
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_penetration = 0.75
+	hull_damage = 2.25
+	
+	power = -35.00
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t4_cost
+			tibanna_gas = @l_t6_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t5_upkeep_energy
+			alloys = @l_t4_upkeep_alloys
+		}
+	}
+	
+	
+	prerequisites = { "tech_st_disruptor_2" }
+	component_set = "DISRUPTOR_2_P"
+	projectile_gfx = "st_disruptor_1_l"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+	upgrades_to = "LARGE_DISRUPTOR_3_P"
+}
+
+### Disruptor 3
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_DISRUPTOR_3_P"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_disruptor_turbo_3"
+	icon_frame = 1
+	
+	damage = { min = 50.0 max = 126.0 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 50
+	range = 7.0
+	accuracy = 0.75
+	tracking = 0.40
+	
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_penetration = 0.75
+	hull_damage = 2.25
+	
+	power = -20.0
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			tibanna_gas = @m_t7_cost
+		}		
+		upkeep = {
+			tibanna_gas = @m_t6_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_st_disruptor_3" }
+	component_set = "DISRUPTOR_3_P"
+	projectile_gfx = "st_disruptor_3_m"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_DISRUPTOR_3_P"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_disruptor_turbo_3"
+	icon_frame = 1
+	
+	
+	damage = { min = 100.0 max = 252.0 }
+	windup = { min = 1.0 max = 20.0 }
+	total_fire_time = 50
+	range = 10.0
+	accuracy = 0.75
+	tracking = 0.10
+	
+	shield_damage = 0.25
+	shield_penetration = 0.0
+	armor_penetration = 0.75
+	hull_damage = 2.25
+	
+	power = -40.00
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t5_cost
+			tibanna_gas = @l_t7_cost
+		}		
+		upkeep = {
+			tibanna_gas = @l_t6_upkeep_energy
+			alloys = @l_t5_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_st_disruptor_3" }
+	component_set = "DISRUPTOR_3_P"
+	projectile_gfx = "st_disruptor_3_l"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_short_range }
+}
+
+

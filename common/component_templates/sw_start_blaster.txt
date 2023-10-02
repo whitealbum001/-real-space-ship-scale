@@ -1,0 +1,51 @@
+#Blaster 1
+weapon_component_template = {
+	type = point_defence 
+	
+	key = "SMALL_BLASTER_1"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_blaster_1"
+	icon_frame = 1
+	
+	damage = { min = 4.0 max = 15.0 }
+	windup = { min = 0.0 max = 0.0 }
+	total_fire_time = 35
+	range = 5.0
+	accuracy = 0.8
+	tracking = 0.80
+	
+	shield_damage = 1.00
+	shield_penetration = 0.0
+	armor_penetration = 0.0
+	armor_damage = 1.25
+	hull_damage = 1.0
+	
+	power = -2.00
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @s_t1_cost
+		}		
+		upkeep = {
+			energy = @s_t1_upkeep_energy
+			alloys = @s_t1_upkeep_alloys
+		}
+	}
+	
+	prerequisites = { "tech_st_blaster_eng" }
+	component_set = "BLASTER_1"
+	projectile_gfx = "Blaster_1"
+	tags = { weapon_type_turbo_laser }
+	ai_tags = { weapon_role_anti_armor }	
+	
+	ai_weight = {
+		weight = 100
+		modifier = {
+			factor = 0.0
+			has_global_flag = disable_turbo
+		}
+	}
+}
+	

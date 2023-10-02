@@ -1,0 +1,414 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#Updated Range on these
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+
+#####################
+#Concussion Missile
+#####################
+weapon_component_template = {
+	key = "G_CONCUSSION_1"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_small_concussion"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 20.0 max = 56.4 }
+	windup = { min = 1.5 max = 15.0 }
+	total_fire_time = 40.0
+	range = 8
+	accuracy = 0.90
+	tracking = 0.50
+	
+	missile_speed = 27
+	missile_evasion = 0.30
+	missile_health = 3
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 100
+	
+	shield_damage = 1
+	armor_damage = 1.75
+	shield_penetration = 1
+	armor_penetration = 0
+	hull_damage = 1.25
+	
+	
+	power = -10
+	
+	prerequisites = { "tech_small_concussion" }
+	component_set = "G_CONCUSSION_1_SET"
+	projectile_gfx = "medium_concussion_s_missile"
+	upgrades_to = "G_CONCUSSION_2"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t1_cost
+		}		
+		upkeep = {
+			energy = @m_t1_upkeep_energy
+			alloys = @m_t1_upkeep_alloys
+		}
+	}
+}
+
+
+
+###################
+# Medium Concussion
+###################
+weapon_component_template = {
+	key = "G_CONCUSSION_2"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_medium_concussion"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 25.7 max = 73.3 }
+	windup = { min = 1.5 max = 15.0 }
+	total_fire_time = 40.0
+	range = 8
+	accuracy = 0.90
+	tracking = 0.50
+	
+	missile_speed = 27
+	missile_evasion = 0.30
+	missile_health = 3
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 100
+	
+	shield_damage = 1
+	armor_damage = 1.75
+	shield_penetration = 1
+	armor_penetration = 0
+	hull_damage = 1.25
+	
+	
+	power = -13
+	
+	prerequisites = { "tech_medium_concussion" }
+	component_set = "G_CONCUSSION_2_SET"
+	projectile_gfx = "medium_concussion_s_missile"
+	upgrades_to = "G_CONCUSSION_3"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t2_cost
+		}		
+		upkeep = {
+			energy = @m_t2_upkeep_energy
+			alloys = @m_t2_upkeep_alloys
+		}
+	}
+}
+#####################
+# Advanced Concussion
+#####################
+
+weapon_component_template = {
+	key = "G_CONCUSSION_3"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_advanced_concussion"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 33.7 max = 88.9 }
+	windup = { min = 1.5 max = 15.0 }
+	total_fire_time = 40.0
+	range = 8
+	accuracy = 0.90
+	tracking = 0.50
+	
+	missile_speed = 27
+	missile_evasion = 0.30
+	missile_health = 3
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 100
+	
+	shield_damage = 1
+	armor_damage = 1.75
+	shield_penetration = 1
+	armor_penetration = 0
+	hull_damage = 1.25
+	
+	
+	power = -17
+	
+	prerequisites = { "tech_advanced_concussion" }
+	component_set = "G_CONCUSSION_3_SET"
+	projectile_gfx = "medium_concussion_s_missile"
+	upgrades_to = "G_CONCUSSION_4"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t3_cost
+		}		
+		upkeep = {
+			energy = @m_t3_upkeep_energy
+			alloys = @m_t3_upkeep_alloys
+		}
+	}
+}
+
+##################
+# Heavy Concussion
+##################
+
+weapon_component_template = {
+	key = "G_CONCUSSION_4"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_heavy_concussion"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 43.6 max = 128.1 }
+	windup = { min = 1.5 max = 15.0 }
+	total_fire_time = 40.0
+	range = 8
+	accuracy = 0.90
+	tracking = 0.50
+	
+	missile_speed = 27
+	missile_evasion = 0.30
+	missile_health = 3
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 100
+	
+	shield_damage = 1
+	armor_damage = 1.75
+	shield_penetration = 1
+	armor_penetration = 0
+	hull_damage = 1.25
+	
+	
+	power = -22
+	
+	prerequisites = { "tech_heavy_concussion" }
+	component_set = "G_CONCUSSION_4_SET"
+	projectile_gfx = "medium_concussion_s_missile"
+	upgrades_to = "G_CONCUSSION_5"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			kyber_crystals = @m_t4_rare
+		}		
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}
+}
+
+###################
+#Assault Concussion
+###################
+
+weapon_component_template = {
+	key = "G_CONCUSSION_5"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_assault_concussion"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 56.8 max = 154.2 }
+	windup = { min = 1.5 max = 15.0 }
+	total_fire_time = 40.0
+	range = 8
+	accuracy = 0.90
+	tracking = 0.50
+	
+	missile_speed = 27
+	missile_evasion = 0.30
+	missile_health = 3
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 100
+	
+	shield_damage = 1
+	armor_damage = 1.75
+	shield_penetration = 1
+	armor_penetration = 0
+	hull_damage = 1.25
+	
+	
+	power = -26
+	
+	prerequisites = { "tech_assault_concussion" }
+	component_set = "G_CONCUSSION_5_SET"
+	projectile_gfx = "medium_concussion_s_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			kyber_crystals = @m_t5_rare
+		}		
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0.0
+			has_monthly_income = { resource = volatile_motes value <= 0 }
+		}
+	}
+}
+
+
+###################
+#Ion Pulse
+###################
+
+weapon_component_template = {
+	key = "G_IONPULSE_1"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_ion_pulse_missile"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 24.0 max = 76.0 }
+	windup = { min = 2.0 max = 15.0 }
+	total_fire_time = 35.0
+	range = 8
+	accuracy = 0.90
+	tracking = 0.60
+	
+	missile_speed = 25
+	missile_evasion = 0.30
+	missile_health = 6
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 25
+	
+	shield_damage = 3.50
+	armor_damage = 0.25
+	hull_damage = 0.25
+	
+	power = -20.00
+	
+	prerequisites = { "tech_ion_pulse_missile" }
+	component_set = "ION_PULSE_1"
+	projectile_gfx = "medium_ionpulse_missile"
+	upgrades_to = "G_IONPULSE_2"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t4_cost
+			kyber_crystals = @m_t4_rare
+		}		
+		upkeep = {
+			energy = @m_t4_upkeep_energy
+			alloys = @m_t4_upkeep_alloys
+		}
+	}
+	
+}
+
+
+
+
+# Ion Pulse 2
+
+
+
+weapon_component_template = {
+	key = "G_IONPULSE_2"
+	size = torpedo
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_ship_part_ion_pulse_missile_2"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 38.0 max = 100.0 }
+	windup = { min = 2.0 max = 15.0 }
+	total_fire_time = 35.0
+	range = 8
+	accuracy = 0.90
+	tracking = 0.70
+	
+	missile_speed = 17
+	missile_evasion = 0.40
+	missile_health = 7
+	missile_armor = 0
+	missile_shield = 0
+	missile_retarget_range = 25
+	
+	shield_damage = 3.50
+	armor_damage = 0.25
+	hull_damage = 0.25
+	
+	power = -30.00
+	
+	
+	prerequisites = { "tech_ion_pulse_missile_2" }
+	component_set = "ION_PULSE_2"
+	projectile_gfx = "medium_ionpulse_2_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @m_t5_cost
+			kyber_crystals = @m_t5_rare
+		}		
+		upkeep = {
+			energy = @m_t5_upkeep_energy
+			alloys = @m_t5_upkeep_alloys
+		}
+	}
+	
+}
+
+
+
