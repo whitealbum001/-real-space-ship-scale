@@ -1,6 +1,6 @@
 @attack_range = 2
 @engagement_range = 25
-@launch_time = 3.5
+@launch_time = 1.5
 @speed1 = 550
 @speed2 = 600
 @speed3 = 650
@@ -56,7 +56,7 @@ strike_craft_component_template = {
 	evasion = 0.90
 	speed = @speed3
 	rotation_speed = 0.8
-	acceleration = 0.2
+	acceleration = 1
 
 	shield_penetration = 0.5
 	armor_damage = 1.5
@@ -107,7 +107,7 @@ strike_craft_component_template = {
 	evasion = 0.80
 	speed = @speed4
 	rotation_speed = 0.8
-	acceleration = 0.2
+	acceleration = 1
 
 	shield_penetration = 0.5
 	armor_damage = 1.5
@@ -158,7 +158,7 @@ strike_craft_component_template = {
 	evasion = 0.90
 	speed = @speed5
 	rotation_speed = 0.8
-	acceleration = 0.2
+	acceleration = 1
 
 	shield_penetration = 0.5
 	armor_damage = 1.5
@@ -210,7 +210,7 @@ strike_craft_component_template = {
 	evasion = 0.75
 	speed = @speed6
 	rotation_speed = 0.8
-	acceleration = 0.2
+	acceleration = 1
 
 	shield_penetration = 0.5
 	armor_damage = 1.5
@@ -262,7 +262,7 @@ strike_craft_component_template = {
 	evasion = 0.70
 	speed = @speed7
 	rotation_speed = 0.8
-	acceleration = 0.2
+	acceleration = 1
 
 	shield_penetration = 0.5
 	armor_damage = 1.5
@@ -314,7 +314,7 @@ strike_craft_component_template = {
 	evasion = 0.95
 	speed = @speed8
 	rotation_speed = 0.8
-	acceleration = 0.2
+	acceleration = 1
 
 	shield_penetration = 0.5
 	armor_damage = 1.5

@@ -1,5 +1,5 @@
-@attack_range = 3
-@engagement_range = 20
+@attack_range = 2
+@engagement_range = 25
 @launch_time = 2
 @speed1 = 550
 @speed2 = 600

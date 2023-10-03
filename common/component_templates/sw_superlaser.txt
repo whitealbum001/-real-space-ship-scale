@@ -47,7 +47,7 @@ weapon_component_template = {
 	}
 	
 	firing_arc = 40.0
-	min_range = 10.0
+	min_range = 2.0
 	static_rotation = yes
 
 	

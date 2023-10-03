@@ -12,7 +12,7 @@ weapon_component_template = {
 	damage = { min = 60.0 max = 150.0 }
 	windup = { min = 15.0 max = 40.0 }
 	total_fire_time = 60.0
-	range = 20.0
+	range = 17.0
 	accuracy = 0.8
 	tracking = 0.15
 	
@@ -62,7 +62,7 @@ weapon_component_template = {
 	damage = { min = 78.0 max = 207.0 }
 	windup = { min = 15.0 max = 40.0 }
 	total_fire_time = 60.0
-	range = 20.0
+	range = 17.0
 	accuracy = 0.8
 	tracking = 0.15
 	
@@ -110,7 +110,7 @@ weapon_component_template = {
 	damage = { min = 101.0 max = 252.0 }
 	windup = { min = 15.0 max = 40.0 }
 	total_fire_time = 60.0
-	range = 20.0
+	range = 17.0
 	accuracy = 0.8
 	tracking = 0.15
 	

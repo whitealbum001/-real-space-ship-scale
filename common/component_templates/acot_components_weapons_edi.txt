@@ -54,7 +54,7 @@ weapon_component_template = {
 	damage = { min = 70 max = 186 }
 	windup = { min = 3 max = 11 }
 	total_fire_time = 16
-	range = 15
+	range = 16
 	accuracy = 0.9
 	power = @m_ae_power_cost
 	resources = {
@@ -93,7 +93,7 @@ weapon_component_template = {
 	damage = { min = 168 max = 415 }
 	windup = { min = 3 max = 11 }
 	total_fire_time = 16
-	range = 18
+	range = 20
 	accuracy = 0.9
 	power = @l_ae_power_cost
 	resources = {
@@ -173,7 +173,7 @@ weapon_component_template = {
 	damage = { min = 2500 max = 3500 }
 	windup = { min = 12 max = 47 }
 	total_fire_time = 120
-	range = 22
+	range = 29
 	accuracy = 0.85
 	power = @xl_ae_power_cost
 	resources = {
@@ -196,7 +196,7 @@ weapon_component_template = {
 	tracking = 0.05
 
 	firing_arc = 25.0
-	min_range = 10
+	min_range = 2
 	use_ship_kill_target = no
 
 	prerequisites = { "tech_energy_lance_edi" }
@@ -222,7 +222,7 @@ weapon_component_template = {
 	damage = { min = 9500 max = 18000 }
 	windup = { min = 30 max = 120 }
 	total_fire_time = 220
-	range = 40
+	range = 50.0
 	accuracy = 1.0
 	hull_damage = 2.5
 	shield_damage = 0.50

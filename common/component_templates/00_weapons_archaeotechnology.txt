@@ -7,8 +7,8 @@
 # is_beam = no
 # is_point_defence = no
 
-@attack_range = 3
-@engagement_range = 20
+@attack_range = 2
+@engagement_range = 25
 @launch_time = 2
 @speed1 = 550
 @speed2 = 600
@@ -541,7 +541,7 @@ weapon_component_template = {
 	icon_frame = 1
 
 	firing_arc = 25.0
-	min_range = 7.0
+	min_range = 8.0
 	use_ship_kill_target = no
 
 	prerequisites = { "tech_archaeo_mass_accelerator" }

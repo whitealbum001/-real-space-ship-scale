@@ -20,8 +20,8 @@ weapon_component_template = {
 	armor_penetration = 0.0
 	windup = { min = 1 max = 19 }
 	total_fire_time = 70
-	range = 22
-	min_range = 50
+	range = 29.0
+	min_range = 9
 	accuracy = 1.0
 	tracking = 0.0
 	missile_speed = 12.0
@@ -29,7 +29,7 @@ weapon_component_template = {
 	missile_shield = 0.0
 	missile_armor = 0.0
 	missile_health = 18.0
-	missile_retarget_range = 15
+	missile_retarget_range = 100.0
 	
 	prerequisites = { "tech_tomahawk_cruise_missile_1" }
 	component_set = "TOMAHAWK_CRUISE_MISSILE"
@@ -88,8 +88,8 @@ weapon_component_template = {
 	armor_penetration = 0.5
 	windup = { min = 1 max = 19 }
 	total_fire_time = 30
-	range = 25
-	min_range = 50
+	range = 33
+	min_range = 9
 	accuracy = 1.0
 	tracking = 0.0
 	missile_speed = 24.0
@@ -97,7 +97,7 @@ weapon_component_template = {
 	missile_shield = 0.0
 	missile_armor = 0.0
 	missile_health = 25.0
-	missile_retarget_range = 20
+	missile_retarget_range = 150.0
 	size_damage_factor = 1
 	
 	prerequisites = { "tech_missiles_3" }
@@ -153,8 +153,8 @@ weapon_component_template = {
 	armor_penetration = 0.75
 	windup = { min = 1 max = 10 }
 	total_fire_time = 30
-	range = 19
-	min_range = 25
+	range = 23
+	min_range = 4
 	accuracy = 1.0
 	tracking = 0.0
 	missile_speed = 16.0
@@ -162,7 +162,7 @@ weapon_component_template = {
 	missile_shield = 0.0
 	missile_armor = 0.0
 	missile_health = 35.0
-	missile_retarget_range = 13
+	missile_retarget_range = 75.0
 	size_damage_factor = 1.5
 	
 	prerequisites = { "tech_missiles_5" }
@@ -211,7 +211,7 @@ weapon_component_template = {
 	armor_penetration = 0.75
 	windup = { min = 0 max = 0 }
 	total_fire_time = 5
-	range = 7
+	range = 7.0
 	accuracy = 0.80
 	tracking = 0.80
 	

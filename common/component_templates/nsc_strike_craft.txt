@@ -16,7 +16,7 @@
 #############
 ### STATS ###
 #############
-@attack_range = 3
+@attack_range = 2
 @engagement_range = 20
 @launch_time = 1.5
 @count = 8

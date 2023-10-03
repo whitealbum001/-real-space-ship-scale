@@ -25,8 +25,8 @@ strike_craft_component_template = {
 
 	damage = { min = 160 max = 240 }
 	cooldown = 5
-	range = 30
-	engagement_range = 30
+	range = 25
+	engagement_range = @COMMONz_RANGE_0150
 	accuracy = 0.85
 	tracking = 0.00
 
